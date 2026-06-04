@@ -1,0 +1,171 @@
+<!-- doctype: Declares the document type as HTML5 to ensure correct rendering in modern web browsers -->
+<!DOCTYPE html>
+<!-- html: The root container holding all of the document's elements and metadata -->
+<html lang="en">
+
+<!-- head: Holds machine-readable information (metadata) about the document, such as character sets and viewport definitions -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPSC-349 Lab 1: Movies Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- body: Encloses all the visible, renderable content of the web page shown to the user -->
+
+<body>
+
+    <!-- header: Groups introductory content, branding, and major titles at the top of a page or section -->
+    <header>
+        <div class="container">
+            <h1>Movies Portal</h1>
+            <p>Welcome to the Movies Portal. Explore movies, genres, ratings, and reviews.</p>
+        </div>
+    </header>
+
+    <!-- nav: Defines a set of navigation links designed for site-wide or page-specific menus -->
+    <nav>
+        <ul>
+            <li><a href="#featured">Featured Movies</a></li>
+            <li><a href="#genres">Genres</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- main: Encloses the unique, central content of the document that is not repeated across other pages -->
+    <main class="container">
+
+        <!-- section: Groups related content together into distinct thematic regions of a page -->
+        <section id="featured" class="section">
+            <h2>Featured Movies</h2>
+
+            <div class="movie-grid">
+
+                <!-- article: Defines a self-contained, independent composition like a card, post, or article -->
+                <article class="movie-card">
+                    <h3>The Boys</h3>
+                    <img src="images/the_boys.jpg" alt="The Boys poster" width="200">
+                    <p>A fun and irreverent take on what happens when superheroes abuse their superpowers.</p>
+                    <p><strong>Rating:</strong> 8.7/10</p>
+                    <a class="btn" href="details.html">View Details</a>
+                </article>
+
+                <article class="movie-card">
+                    <h3>Superman</h3>
+                    <img src="images/superman.jpeg" alt="Superman movie poster" width="200">
+                    <p>An upcoming superhero movie following Superman's journey to reconcile his Kryptonian heritage.
+                    </p>
+                    <p><strong>Rating:</strong> 8.5/10</p>
+                    <a class="btn" href="details.html">View Details</a>
+                </article>
+
+                <article class="movie-card">
+                    <h3>Avatar: Fire and Ash</h3>
+                    <img src="images/avatar_fire_and_ash.jpeg" alt="Avatar: Fire and Ash movie poster" width="200">
+                    <p>The next chapter in the Avatar franchise exploring the new ash people of Pandora.</p>
+                    <p><strong>Rating:</strong> 8.9/10</p>
+                    <a class="btn" href="details.html">View Details</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="genres" class="section">
+            <h2>Movie Genres</h2>
+
+            <!-- ul: Defines an unordered (bulleted) list of items -->
+            <ul>
+                <li>Action</li>
+                <li>Comedy</li>
+                <li>Drama</li>
+                <li>Science Fiction</li>
+                <li>Horror</li>
+            </ul>
+        </section>
+
+        <section id="top-movies" class="section">
+            <h2>Top Movies Table</h2>
+
+            <!-- table: Formats structured tabular data into organized rows, header blocks, and data cells -->
+            <div class="table-wrap">
+                <table class="movies-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Genre</th>
+                            <th>Year</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>The Boys</td>
+                            <td>Action / Sci-Fi</td>
+                            <td>2019</td>
+                            <td>8.7</td>
+                        </tr>
+                        <tr>
+                            <td>Superman</td>
+                            <td>Action / Sci-Fi</td>
+                            <td>2025</td>
+                            <td>8.5</td>
+                        </tr>
+                        <tr>
+                            <td>Avatar: Fire and Ash</td>
+                            <td>Science Fiction</td>
+                            <td>2025</td>
+                            <td>8.9</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="reviews" class="section">
+            <h2>Submit a Movie Review (Available Soon)</h2>
+            <p><strong>Status:</strong> This feature is under development and will be available soon!</p>
+
+            <!-- form: Wraps interactive controls to capture and submit user input -->
+            <form action="#" method="post">
+                <!-- label: Provides a text label linked directly to a form control for accessibility -->
+                <label>Movie Title:</label>
+                <br>
+                <!-- input: Creates basic interactive fields to capture user text or button clicks -->
+                <input type="text" placeholder="Coming soon..." disabled>
+                <br><br>
+
+                <label>Rating:</label>
+                <br>
+                <!-- select: Creates a drop-down menu for selecting from multiple options -->
+                <select disabled>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Average</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Terrible</option>
+                </select>
+                <br><br>
+
+                <label for="review">Your Review:</label>
+                <br>
+                <!-- textarea: Provides a multi-line text input control suitable for longer text entries -->
+                <textarea rows="5" cols="40" placeholder="Write review here once available..." disabled></textarea>
+                <br><br>
+
+                <input class="btn" type="submit" value="Submit Review" disabled>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- footer: Contains concluding page details such as copyright notices and contact information -->
+    <footer id="contact">
+        <p>&copy; 2026 Movies Portal</p>
+        <p>Contact us at <a href="mailto:movies@example.com">movies@cspc349.com</a></p>
+    </footer>
+
+</body>
+
+</html>
