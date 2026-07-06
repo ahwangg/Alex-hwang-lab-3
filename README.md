@@ -176,7 +176,12 @@ Students must submit:
 
 1. Updated Lab 3 repository with completed [index.html](index.html), [styles.css](styles.css), and [README.md](README.md)
 2. A screenshot showing the phone layout working
+![Phone Responsive Layout](images/phone.png)
 3. A screenshot showing the iPad/tablet layout working
+![Tablet Responsive Layout](images/tablet.png)
 4. A working GitHub Pages link for the deployed movie portal
+https://csuf-cpsc349-summer2026.github.io/cpsc-349-sm26-lab-3/
 5. Evidence that the same responsive design approach was applied to the personalized movie portal
+![Phone Responsive Layout](images/phone2.png)
+![Tablet Responsive Layout](images/tablet2.png)
 6. All screenshots must be decorated in the [README.md](README.md) file.
